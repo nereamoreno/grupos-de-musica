@@ -1,5 +1,49 @@
-body, h1, h2, ul, li {
- border: 0px;
- margin: 0px;
- padding: 0px;
+body{
+    background-color: #3C3D42;
 }
+
+header{
+    height: 120px;
+    background-color: #F5582C;
+}
+
+header nav ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 20px;
+    
+}
+
+header nav ul li {
+    display: inline;
+    padding-right: 10px;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.fondoamarillo{
+    background-color: #C7BBA3;
+    
+}
+
+.centrado {
+    width: 980px;   
+    margin: 0 auto;    
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+
