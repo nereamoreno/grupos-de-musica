@@ -3,118 +3,155 @@
 
 <head>
     <meta charset="utf-8">
-    <title>U2 Grupos de música Rock y Pop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>U2 Grupos de música Rock</title>
+    
+    <!--estilos-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/comun.css">
+    <link rel="stylesheet" href="styles/queries.css">
+    
+    <!--tipografía googlefonts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <!--Estilos para el menu horizontal-->
+    <link href="styles/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="styles/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
     <header>
-        <div class="centrado">
-            <nav>
-                <ul>
+        <figure class="logo"> 
+           <a href="index.html"><img src="img/logo.png" /></a>
+        </figure>
+        <p class="subtitulo">La mejor música Rock and Roll</p>
+        
+    </header>
+    
+    <div id="contenido">
+        <nav>
+                <ul class="dropdown dropdown-horizontal">
                     <li><a href="index.html">Inicio</a>
                     </li>
-                    <li><a href="grupos.html">Grupos</a>
+                    <li class="dir">Grupos
+                        <ul>
+                            <li class="first"><a href="beatles.html">The Beatles</a>
+                            </li>
+                            <li><a href="u2.html">U2</a>
+                            </li>
+                            <li class="last"><a href="rolling.html">Rolling Stones</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a href="contacto.html">Contácto</a>
-                    </li>
+
+                    <li><a href="contacto.html">Contácto</a></li>
                 </ul>
-            </nav>
-
-            <img class="logo" src="img/logotipo.png" alt="Grupos de musica rock y pop">
-        </div>
-    </header>
-
-
-    <div class="centrado fondoamarillo">
-
-        <h2>U2</h2>
-
-        <section>
-            <h3>Biografía</h3>
-
-            <p>U2 es una banda de de rock perteneciente a la "New Wave", y originaria de Dublín (Irlanda). Sus letras, a menudo ordenadas con imágenes espirituales, se centran en temas personales y temática de justicia social y paz. U2 se formó en la Mount Temple Comprehensive School, cuando sus miembros iniciales eran adolescentes y tenían un limitado conocimiento musical. Al cabo de cuatro años, firmaron su primer contrato discográfico con Island Records y lanzaron su álbum debut, Boy. A mediados de los años ochenta, la banda pasó a ser conocida mundialmente. Tuvieron más éxito como artistas en vivo que como artistas comerciales por lo que a venta de álbumes se refiere, hasta su álbum de 1987 que los catapulto a la fama, The Joshua Tree, el cual según la revista Rolling Stone, elevó a la banda «de héroes a superestrellas».</p>
+        </nav>
+        
+        <section id="introduccion">
+                <h2>U2: puro Rock and Roll</h2>
+                <img src="img/u2.jpg" />          
         </section>
 
-        <section>
-            <h3>Miembros</h3>
+        <section id="principal">
 
-            <ul class="cantantes">
-                 <li><img src="img/bono.jpg" alt="Paul hewson:bono">Paul Hewson (1960), más conocido como <a href="http://www.u2.com" target="_blank">Bono</a></li>
-                <li><img src="img/the-edge.jpg" alt="David Evans:The Edge">David Evans (1961), conocido como The Edge</li>
-                <li><img src="img/adam-clayton.jpg" alt="Adam Clayton">Adam Clayton (1960)</li>
-                <li><img src="img/larry-mullen-jr.jpg" alt="Larry Mullen">Larry Mullen Jr. (1961).</li>
-            </ul>
+            <article>
+                <h3>Biografía</h3>
+                <p>U2 es una banda de de rock perteneciente a la "New Wave", y originaria de Dublín (Irlanda). Sus letras, a menudo ordenadas con imágenes espirituales, se centran en temas personales y temática de justicia social y paz. U2 se formó en la Mount Temple Comprehensive School, cuando sus miembros iniciales eran adolescentes y tenían un limitado conocimiento musical. Al cabo de cuatro años, firmaron su primer contrato discográfico con Island Records y lanzaron su álbum debut, Boy. A mediados de los años ochenta, la banda pasó a ser conocida mundialmente. Tuvieron más éxito como artistas en vivo que como artistas comerciales por lo que a venta de álbumes se refiere, hasta su álbum de 1987 que los catapulto a la fama, The Joshua Tree, el cual según la revista Rolling Stone, elevó a la banda «de héroes a superestrellas».</p>    
+            </article>
+
+            <article>
+                <h3>Miembros</h3>
+                <ul class="cantantes">
+                    <li><img src="img/bono.jpg" alt="Paul hewson:bono">Paul Hewson (1960) <a href="https://es.wikipedia.org/wiki/Bono_(m%C3%BAsico)" target="_blank">Bono</a>
+                    </li>
+                    <li><img src="img/the-edge.jpg" alt="David Evans:The Edge">David Evans (1961) <a href="https://es.wikipedia.org/wiki/The_Edge" target="_blank">The Edge</a></li>
+                    <li><img src="img/adam-clayton.jpg" alt="Adam Clayton">Adam Clayton (1960)</li>
+                    <li><img src="img/larry-mullen-jr.jpg" alt="Larry Mullen">Larry Mullen Jr. (1961).</li>
+                </ul>   
+            </article>
+            
+            <acticle class="lista">
+                <h3>Discografía</h3>
+                <ul>
+                    <li>Three EP (1979)</li>
+                    <li>Boy (1980)</li>
+                    <li>October (1981)</li>
+                    <li>War (1983)</li>
+                    <li>The Unforgettable Fire (1984)</li>
+                    <li>The Joshua Tree (1987)</li>
+                    <li>Rattle and Hum (1988)</li>
+                    <li>Achtung Baby (1991)</li>
+                    <li>Zooropa (1993)</li>
+                    <li>Pop (1997)</li>
+                    <li>All That You Can't Leave Behind (2000)</li>
+                    <li>How to Dismantle an Atomic Bomb (2004)</li>
+                    <li>No Line on the Horizon (2009)</li>
+                    <li>Songs of Innocence (2014)</li>
+                </ul>
+            </article>
+
+            <article class="lista">
+                <h3>Lista de Canciones de su último album</h3>
+
+                <h4>CD1</h4>
+
+                <ol>
+                    <li>The Miracle (of Joey Ramone)</li>
+                    <li>Every Breaking Wave</li>
+                    <li>California (There Is No End To Love)</li>
+                    <li>Song For Someone</li>
+                    <li>Iris (Hold Me Close)</li>
+                    <li>Volcano</li>
+                    <li>Raised By Wolves</li>
+                    <li>Cedarwood Road</li>
+                    <li>Sleep Like A Baby Tonight</li>
+                    <li>This Is Where You Can Reach Me Now</li>
+                    <li>The Troubles</li>
+                </ol>
+                
+                <br/>
+
+                <h4>CD2</h4>
+
+                <ol>
+                    <li>Lucifer's Hands</li>
+                    <li>The Crystal Ballroom</li>
+                    <li>Every Breaking Wave (From Acoustic Sessions)</li>
+                    <li>California (There Is No End To Love) (From Acoustic Sessions)</li>
+                    <li>Raised By Wolves (From Acoustic Sessions)</li>
+                    <li>Cedarwood Road (From Acoustic Sessions)</li>
+                    <li>Song For Someone (From Acoustic Sessions)</li>
+                    <li>The Miracle (Of Joey Ramone) (Busker Version)</li>
+                    <li>The Troubles (Alternative Version)</li>
+                    <li>Sleep Like A Baby Tonight (Alternative Perspective Mix by Tchad Blake)</li>
+                </ol>
+            </article>
+            
         </section>
-        <section>
-            <h3>Discografía</h3>
+    
+        <aside>
+            <div id="sidebar">
 
-            <ul>
-                <li>Three EP (1979)</li>
-                <li>Boy (1980)</li>
-                <li>October (1981)</li>
-                <li>War (1983)</li>
-                <li>The Unforgettable Fire (1984)</li>
-                <li>The Joshua Tree (1987)</li>
-                <li>Rattle and Hum (1988)</li>
-                <li>Achtung Baby (1991)</li>
-                <li>Zooropa (1993)</li>
-                <li>Pop (1997)</li>
-                <li>All That You Can't Leave Behind (2000)</li>
-                <li>How to Dismantle an Atomic Bomb (2004)</li>
-                <li>No Line on the Horizon (2009)</li>
-                <li>Songs of Innocence (2014)</li>
-            </ul>
-        </section>
+                <article>
+                    <h3>Tour 2015</h3>
+                    <ul>
+                        <li>
+                            <time datetime="2015-10-05">5 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
 
-        <section>
-            <h4>Lista de Canciones de su último album</h4>
-
-            <h5>CD1</h5>
-
-            <ol>
-                <li>The Miracle (of Joey Ramone)</li>
-                <li>Every Breaking Wave</li>
-                <li>California (There Is No End To Love)</li>
-                <li>Song For Someone</li>
-                <li>Iris (Hold Me Close)</li>
-                <li>Volcano</li>
-                <li>Raised By Wolves</li>
-                <li>Cedarwood Road</li>
-                <li>Sleep Like A Baby Tonight</li>
-                <li>This Is Where You Can Reach Me Now</li>
-                <li>The Troubles</li>
-            </ol>
-
-            <h5>CD2</h5>
-
-            <ol>
-                <li>Lucifer's Hands</li>
-                <li>The Crystal Ballroom</li>
-                <li>Every Breaking Wave (From Acoustic Sessions)</li>
-                <li>California (There Is No End To Love) (From Acoustic Sessions)</li>
-                <li>Raised By Wolves (From Acoustic Sessions)</li>
-                <li>Cedarwood Road (From Acoustic Sessions)</li>
-                <li>Song For Someone (From Acoustic Sessions)</li>
-                <li>The Miracle (Of Joey Ramone) (Busker Version)</li>
-                <li>The Troubles (Alternative Version)</li>
-                <li>Sleep Like A Baby Tonight (Alternative Perspective Mix by Tchad Blake)</li>
-            </ol>
-        </section>
-
-        <section>
-            <h4>Tour 2015</h4>
-            <ul>
-                <li><time datetime="2015-10-05">5 de octubre de 2015</time>
-                    <br>
-                     <span class="lugar">Barcelona, Palau Sant Jordi</span></li>
-
-                <li><time datetime="2015-10-06">6 de octubre de 2015</time>
-                    <br> 
-                    <span class="lugar">Barcelona, Palau Sant Jordi</span></li>
-            </ul>
-        </section>
+                        <li>
+                            <time datetime="2015-10-06">6 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </aside>
     </div>
 
 </body>

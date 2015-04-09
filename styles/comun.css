@@ -1,78 +1,235 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, form {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
 body{
+    background: #fff url("../img/cabecera.jpg") repeat-x center top;
     background-color: #3C3D42;
+    font-family: 'Signika', sans-serif;
+    font-size: 62.5%;/*1em = 10px. el 62.5%de 16px es 10px*/ 
 }
 
 header{
-    height: 150px;
-    background-color: #F5582C;
+    height: 14em;
+    padding-top:1em;
+    text-align: center;
 }
 
-header nav ul {
-    margin-top: 0px;
-    list-style: none;
-    padding-left: 0px;
-    padding-top: 20px;
-    
-}
 
-header nav ul li {
-    display: inline;
-    padding-right: 10px;
-    
-}
-
-header nav ul li a {
-    text-decoration: none;
+header p{
+    font-size:2em; 
     color: #fff;
-    font-size: 16px;
+    font-weight: 700;
 }
 
-img.logo/*o soloamente .logo*/{
-    width: 447px;
-    display: block;
-    margin: 0px auto;
+.logo{
+    margin: 0px;
+}
+
+#contenido{
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    padding-top: 0em;
+    padding-left:2em;
+    padding-right:2em; 
+    padding-bottom: 1em;
+  
+}
+
+nav {
+  clear: both;
+}
+
+#introduccion {
+  width: 100%;
+  clear: both;
+}
+
+#introduccion img {
+	width: 100%;
+    height: auto;
+}
+
+#principal {
+    width: 280px;
+ }
+
+#sidebar{
+     width: 280px;
+ }
+
+
+h2, h3, h4 {
+    color:#be530c;
 }
 
 
 h2{
-    border-bottom: 2px solid #F5582C;
-
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    width: 100%;   
+    margin: 0 auto; 
+    clear: both;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-h2, h3, h4 {
-    color:#F5582C;
+
+h3{
+ font-size: 2.5em;   
+ text-align: center;
+ margin-bottom: 0.5em;
 }
 
-
-.fondoamarillo{
-    background-color: #C7BBA3;
-    
+h4{
+ font-size: 1.8em; 
+ text-align: center;
+ margin-bottom: 0.5em;
 }
 
-.centrado {
-    width: 980px;   
-    margin: 0 auto;    
-    padding-top: 5px;
-    padding-left: 5px;
+.subtitulo{
+ font-size: 2em; 
+}
+
+#principal p {
+    font-size: 1.5em; 
+    text-align : justify;
+}
+
+article{
+    margin-top:2em;
 }
 
 .cantantes {/*ul.cantantes indicaríamos que solo lo aplicamos en ul*/ 
  list-style: none;
- 
+ font-size: 1.5em;   
+
 }
 
-li img {
-     width: 50px;
+.cantantes a{
+     text-decoration: none; 
+     color: #be530c;
+}
+
+.cantantes a:hover{
+     text-decoration: underline;    
+}
+
+
+li img {     
+     width: 5em;
      height: auto;
-     border: 4px solid #3C3D42;
-     padding: 5px;
-     margin: 0px 20px 5px 0px;
+     border: 0.4em solid #3C3D42;
+     padding: 0.5em;
+     margin: 0em 2em 0.5em 0em;
      vertical-align: middle;
-     background-color: #F5582C;
+     background-color: #be530c;  
 }
 
-.lugar{
-    color:grey;
+.lista ul{
+     list-style: none;
+}
+
+.lista ol{
+     list-style: none;
+}
+.lista li{
+     font-size: 1.5em; 
+     margin-top: 0.5em;
+     text-align: center;
+}
+ 
+#sidebar ul{
+    list-style: none;
+}
+
+#sidebar li {
+    font-size: 1.5em; 
+    margin-top: 0.5em;
+}
+
+#sidebar p {
+    color: #be530c;
     text-transform: uppercase;
 }
 
+time{
+    font-size: 1em; 
+    color: #000;
+}
+.lugar{
+    color:grey;
+    text-transform: uppercase;
+    font-size: 1em;  
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+/******FORMULARIO DE CONTACTO******/
+form {
+  width: 280px;
+  margin:0 auto 8em;
+  height: auto;
+  padding:20px;
+  border:1px solid #ccc;
+  background-color: #3C3D42;
+  /* border radius */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; 
+}
+
+input[type="text"]{
+  font-size: 1.5em;
+  color : #000; 
+  padding : 3px; 
+  border : 1px solid #999;
+  height:25px;
+  width:100%;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  /* border radius */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  font-size: 1.5em;
+  width:100%;
+  height:3em;
+  /* border radius */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+}
+
+.textarea {
+    width:100%;
+    height:100px;
+    overflow:auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+label {
+  font-size: 1.7em;
+  color : #fff;   
+}

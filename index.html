@@ -1,33 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Grupos de música Rock y Pop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Grupos de música Rock</title>
+    
+    <!--estilos-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/comun.css">
+    <link rel="stylesheet" href="styles/queries.css">
+    
+    <!--tipografía googlefonts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <!--Estilos para el menu horizontal-->
+    <link href="styles/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="styles/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
     <header>
-        <div class="centrado">
-            <nav>
-                <ul>
+        <figure class="logo"> 
+           <a href="index.html"><img src="img/logo.png" /></a>
+        </figure>
+        <p class="subtitulo">La mejor música Rock and Roll</p>
+        
+    </header>
+    
+    <div id="contenido">
+        <nav>
+                <ul class="dropdown dropdown-horizontal">
                     <li><a href="index.html">Inicio</a>
                     </li>
-                    <li><a href="grupos.html">Grupos</a>
+                    <li class="dir">Grupos
+                        <ul>
+                            <li class="first"><a href="beatles.html">The Beatles</a>
+                            </li>
+                            <li><a href="u2.html">U2</a>
+                            </li>
+                            <li class="last"><a href="rolling.html">Rolling Stones</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a href="contacto.html">Contácto</a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>Los mejores Grupos de música Rock y Pop</h1>
-        </div>
-    </header>
 
-    <h2>Los mejores Grupos de música Rock y Pop</h2>
+                    <li><a href="contacto.html">Contácto</a></li>
+                </ul>
+        </nav>
+        
+        <section id="introduccion">
+                <h2>Escucha la mejor música!</h2>   
+        </section>
+
+        <section id="principal">
+
+            <article>
+                <h3>The Beatles - Love me do</h3>
+                <video width="100%" controls="controls">
+                      <source src="video/video.mp4" type="video/mp4">
+                </video>
+            </article>
+
+            
+        </section>
+    
+        <aside>
+            <div id="sidebar">
+
+                <article>
+                    <h3>Próximos conciertos</h3>
+                    <ul>
+                        <li>
+                            <p>Rollin Stones</p>
+                            <time datetime="2015-05-24">24 de Mayo</time>
+                            <span class="lugar">Petco Park,	San Diego</span>
+                        </li>
+                        <li>
+                            <p>Metallica</p>
+                            <time datetime="2015-05-30">30 de Mayo</time>
+                            <br>
+                            <span class="lugar">Ohio Stadium, Columbus</span>
+                        </li>
+                        <li>
+                            <p>Guns N' Roses</p>
+                            <time datetime="2015-06-03">3 de Junio</time>
+                            <br>
+                            <span class="lugar">TCF Bank Stadium, Minneapolis</span>
+                        </li>
+                        <li>
+                            <p>U2</p>
+                            <time datetime="2015-10-05">5 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
+
+                        <li>
+                            <p>Aerosmith</p>
+                            <time datetime="2015-10-06">6 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
+                        <li>
+                            <p>AC/DC</p>
+                            <time datetime="2015-10-06">6 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
+                        <li>
+                            <p>Metallica</p>
+                            <time datetime="2015-10-06">6 de octubre de 2015</time>
+                            <br>
+                            <span class="lugar">Barcelona, Palau Sant Jordi</span>
+                        </li>
+                        
+                    </ul>
+                </article>
+            </div>
+        </aside>
+    </div>
 
 </body>
 
 </html>
+

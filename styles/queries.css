@@ -1,0 +1,53 @@
+@media screen and (min-width:320px){
+
+    #contenido{
+        width:95%;   
+    }
+
+    #principal{
+        width: 100%;    
+    }
+
+    #sidebar{
+        width: 100%;   
+    }
+}
+
+
+@media screen and (min-width:830px){
+        
+    #principal{
+        width: 60%;
+        float: left;
+    }
+
+    #sidebar{
+        width: 28%;
+        float: right;
+        margin-top: 2em;
+        padding-left: 2em;
+        padding-bottom: 2em;
+        display: block;
+        background-color: #3C3D42;
+        /* border radius */
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+         border-radius: 10px; 
+    }
+    
+    time{
+        color: #fff;
+    }
+    
+    form{
+         width:50%;
+    }
+
+
+}
+
+@media screen and (min-width:980px){
+     #contenido{
+        width:980px;   
+    }
+}

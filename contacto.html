@@ -1,33 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Contacto - Grupos de música Rock y Pop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Contácto Grupos de música Rock</title>
+    
+    <!--estilos-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/comun.css">
+    <link rel="stylesheet" href="styles/queries.css">
+    
+    <!--tipografía googlefonts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika:400,600,700,300' rel='stylesheet' type='text/css'>
+
+    <!--Estilos para el menu horizontal-->
+    <link href="styles/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="styles/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
     <header>
-        <div class="centrado">
-            <nav>
-                <ul>
+        <figure class="logo"> 
+           <a href="index.html"><img src="img/logo.png" /></a>
+        </figure>
+        <p class="subtitulo">La mejor música Rock and Roll</p>
+        
+    </header>
+    
+    <div id="contenido">
+        <nav>
+                <ul class="dropdown dropdown-horizontal">
                     <li><a href="index.html">Inicio</a>
                     </li>
-                    <li><a href="grupos.html">Grupos</a>
+                    <li class="dir">Grupos
+                        <ul>
+                            <li class="first"><a href="beatles.html">The Beatles</a>
+                            </li>
+                            <li><a href="u2.html">U2</a>
+                            </li>
+                            <li class="last"><a href="rolling.html">Rolling Stones</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li><a href="contacto.html">Contácto</a>
-                    </li>
+
+                    <li><a href="contacto.html">Contácto</a></li>
                 </ul>
-            </nav>
-            <h1>Los mejores Grupos de música Rock y Pop</h1>
-        </div>
-    </header>
-    <h2>Contactar</h2>
-    <!-- Aqui ira el formulario de contacto -->
+        </nav>
+        
+        <section id="introduccion">
+                <h2>Formulario de Contácto</h2>
+        </section>
+
+        <section id="formulario">
+            <form action="index.html" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"> <br/>       
+   
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos"> <br/>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono"><br/>
+
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email"> <br/>
+                    
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion"> <br/>
+                    
+                    <label for="mensaje">Escribe tu mensaje</label>
+                    <textarea class="textarea"></textarea> <br/>
+          
+                    <br/>
+                
+                    <input type="submit" name="enviar" value="Enviar">
+
+            </form>
+            
+        </section>
+        
+        
+    
+        
+    </div>
 
 </body>
 
 </html>
+
